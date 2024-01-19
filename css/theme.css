@@ -1,0 +1,102 @@
+/*GENERAL*/
+* {
+	box-sizing: border-box; /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'Source Sans 3', sans-serif;
+	color: var(--texte);
+}
+
+/* # 00748D */
+/* # CB8606 */
+:root {
+	/*Rose*/--principalColor:#db0059;
+	/*Bleu*/--secondaryColor:#037d9d;
+	/*Gris*/--bgarticle:#ededed;
+	/*Noir*/--texte:#414141;
+}
+
+.container{
+    max-width:1100px ;
+	margin: 0 auto;
+}
+p {
+	margin: 0 0 1.5rem 0;
+}
+ul {
+	padding-left: 0;
+}
+
+img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+h1{
+    color:var(--principalColor);
+    font-size:3rem;
+    font-family: 'Mali', cursive;
+    background-color: var(--bgarticle);
+    opacity: 0.7;
+    
+}
+
+h2{
+     text-align:center;
+         display:flex;
+        flex-direction: column;
+        font-size:2.8rem;
+}
+h3{
+    color:var(--secondaryColor);
+    font-size:2rem;
+}
+h2,h3,h4,nav,blockquote{
+    font-family: 'Mali', cursive;
+   
+}
+
+
+
+/* HEADER */
+
+.indexlink{
+    text-align: center;
+}
+.photo{
+    width: 20%;
+    height: auto;
+    border-radius:50%
+}
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    margin-bottom:1.8rem;
+     border-left: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+nav ul li:hover,.current {
+     border-left: 3px solid var(--secondaryColor);
+    border-bottom: 3px solid var(--secondaryColor);
+    background-color: var(--bgarticle);
+}
+nav ul li a {
+    text-decoration:none;
+    color: var(--texte);
+    font-weight:bold;
+    font-size:2.8rem;
+}

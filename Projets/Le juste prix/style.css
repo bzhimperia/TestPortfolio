@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin-top:1rem;
+    background-color: #e40e0e;
+    border:0px;
+    border-radius:5px;
+    padding:0.5rem 1rem;
+}
+.vie{
+    background-color: rgb(7, 194, 7);
+    height:30px;
+    width:30px;
+    margin-bottom:1rem
+}
+
+.vie.erreur {
+    background-color: red;
+}
